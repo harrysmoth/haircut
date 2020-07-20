@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="icon" href="icons/tabicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HAIRCUT - мужская парикмахерская</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-logo">HairCut</div>
+                <nav class="header-nav" id="nav">
+                    <a href="#" class="header-link" data-scroll="#main">Главная</a>
+                    <a href="#" class="header-link" data-scroll="#about">О нас</a>
+                    <a href="#" class="header-link" data-scroll="#works">Галерея</a>
+                    <a href="#" class="header-link" data-scroll="#price">Цены</a>
+                    <a href="#" class="header-link" data-scroll="#contact">Записаться</a>
+                    <a href="#" class="header-link" data-scroll="#reviews">Отзывы</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger-item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <div class="main" id="main">
+        <div class="container">
+            <div class="main-inner">
+                <h1 class="main-title">Посети нас</h1>
+                <h2 class="main-subtitle">дружелюбный персонал и отличные цены</h2>
+                <a class="btn" href="#" data-scroll="#contact">Записаться</a>
+                <select id="cities-select">
+                    <option hidden disabled selected>Выберите ваш город</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- About Us -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about-title">Почему именно мы?</div>
+            <div class="about-inner">
+                <div class="about-description">В нашем городе мужская парикмахерская HAIRCUT - первая парикмахерская,
+                    где мужчины "прокачивают" свой стиль.
+                    Следить за своим внешним видом - это современно. В нашей парикмахерской качественная "рихтовка"
+                    каждого посетителя: стрижка машинкой и ножницами, создание узоров, корректировка бороды и усов,
+                    бритье "опаской", укладка, подбор средств для ухода за волосами.
+                    HAIRCUT - это новый формат отдыха и общения. В уникальной атмосфере чувствуешь себя самим собой, от
+                    чего получаешь наслаждение и забываешь о проблемах. Побывав здесь один раз - переходишь на новый
+                    уровень!</div>
+            </div>
+        </div>
+    </div>
+    <!-- Work -->
+    <div class="works" id="works">
+        <div class="works-item"><img src="images/work1.jpg" alt="" class="works-photo">
+            <div class="works-content">
+                <div class="works-title">Корректировка бороды и усов</div>
+            </div>
+        </div>
+        <div class="works-item"><img src="images/work2.jpg" alt="" class="works-photo">
+            <div class="works-content">
+                <div class="works-title">Стрижка</div>
+            </div>
+        </div>
+        <div class="works-item"><img src="images/work3.jpg" alt="" class="works-photo">
+            <div class="works-content">
+                <div class="works-title">Бритье "опаской"</div>
+            </div>
+        </div>
+        <div class="works-item"><img src="images/work4.jpg" alt="" class="works-photo">
+            <div class="works-content">
+                <div class="works-title">Уход за волосами</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Services -->
+    <div class="services" id="price">
+        <div class="container">
+            <div class="services-title">Наши цены</div>
+            <div class="sevices-inner">
+                <div class="service">
+                    <div class="service-name">Мужская стрижка и стрижка бороды</div>
+                    <div class="service-price">1500 RUB</div>
+                </div>
+                <div class="service">
+                    <div class="service-name">Оформление бороды "опаской"</div>
+                    <div class="service-price">900 RUB</div>
+                </div>
+                <div class="service">
+                    <div class="service-name">Мужская стрижка</div>
+                    <div class="service-price">700 RUB</div>
+                </div>
+                <div class="service">
+                    <div class="service-name">Стрижка машинкой</div>
+                    <div class="service-price">600 RUB</div>
+                </div>
+                <div class="service">
+                    <div class="service-name">Стрижка бороды</div>
+                    <div class="service-price">500 RUB</div>
+                </div>
+                <div class="service">
+                    <div class="service-name">Уход за волосами</div>
+                    <div class="service-price">400 RUB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form -->
+    <div class="form" id="contact">
+        <div class="container">
+            <div class="form-inner">
+                <form action="php/telegram.php" method="POST">
+                    <legend class="form-title">Запишитесь к нам</legend>
+                    <div class="form-group">
+                        <label for="">Введите имя</label>
+                        <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Введите фамилию</label>
+                        <input type="text" class="form-control" id="" name="user_lastname"
+                            placeholder="Например, Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Введите номер телефона</label>
+                        <input type="text" class="form-control" id="" name="user_data" pattern="^\+7\d{3}\d{7}$" value="+7" maxlength="12" placeholder="+7 (999) 99 99 999"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="city-subtitle">Ваш город <span class="note">(<a href="#" class="note-link" data-scroll="#main">выберите</a>, если  не сделали этого)</span> </label>
+                        <select id="adress-select" class="city" name="user_city" required>
+                            <option hidden disabled selected>Город не выбран</option>
+                        </select>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="">Введите ваше сообщение</label>
+                        <textarea type="text" class="area-control" id="" name="user_mes"
+                            placeholder="Введите Ваше сообщение здесь..." required></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" class="btn--form" id="buttonsend">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Reviews -->
+        <div class="reviews" id="reviews">
+            <div class="container">
+                <div class="reviews-slider" id="reviewsSlider">
+                    <div class="slick-item">
+                        <div class="reviews-item">
+                            <div class="reviews-photo">
+                                <img src="images/photo1.jpg" alt="" class="reviews-img">
+                            </div>
+                            <div class="reviews-author">Сергей Кочанов, основатель стартапа StepByStep</div>
+                            <div class="reviews-content">
+                                <div class="reviews-text">"Вежливо. Профессионально. Приятно. Быстро. Очень качественно.
+                                    Рекомендую."</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slick-item">
+                        <div class="reviews-item">
+                            <div class="reviews-photo">
+                                <img src="images/photo2.jpg" alt="" class="reviews-img">
+                            </div>
+                            <div class="reviews-author">Роман Костенков, фрилансер</div>
+                            <div class="reviews-content">
+                                <div class="reviews-text">"Была лучшая стрижка и бритье, которое мне когда-либо делали.
+                                    Строго рекомендую."</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-description">Мужская парикмахерская - HAIRCUT. &COPY; 2020 </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/selectcity.js"></script>
+        <script src="js/menu.js"></script>
+</body>
+</html>
